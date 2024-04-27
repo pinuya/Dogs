@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TokenPost = () => {
+export default function TokenPost() {
   const [username, setUsername] = React.useState('');
   const [password, setPassword] = React.useState('');
   const [token, setToken] = React.useState('');
@@ -48,5 +48,3 @@ const TokenPost = () => {
     </form>
   );
 };
-
-export default TokenPost;

@@ -1,6 +1,6 @@
 import React from "react";
 
-const UserPost = () => {
+export default function UserPost() {
   const [username, setUsername] = React.useState("");
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
@@ -58,4 +58,3 @@ const UserPost = () => {
   );
 };
 
-export default UserPost;
