@@ -5,7 +5,7 @@ import Button from "../Forms/Button";
 import useForm from "../../Hooks/useForm";
 
 export default function LoginForm(){
-    const username = useForm();
+    const username = useForm('email');
     const password = useForm();
 
     function handleSubmit(event){
