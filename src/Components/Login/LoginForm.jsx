@@ -5,11 +5,13 @@ import Button from "../Forms/Button";
 import useForm from "../../Hooks/useForm";
 
 export default function LoginForm(){
-    const username = useForm('email');
+    const username = useForm();
     const password = useForm();
 
     function handleSubmit(event){
-        event.preventDefault()
+        event.preventDefault();
+
+        if(username.validate() && password.validate()){
         fetch('https://dogsapi.origamid.dev/json/jwt-auth/v1/token',{
             method: 'POST',
             headers: {
@@ -21,6 +23,7 @@ export default function LoginForm(){
         }).then(json => {
             console.log(json);
         });
+    }
     }
 
     return(
