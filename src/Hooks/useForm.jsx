@@ -3,8 +3,8 @@ import React from "react";
 
 const validateEmail = {
     email: {
-        regex: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
-        message: 'Preencha com um e-mail válido!',
+        regex: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+        message: 'Preencha um email válido',
     },
 };
 
@@ -17,7 +17,7 @@ export default function useForm(type) {
         if (value.length === 0) {
             setError('Preencha um valor.')
             return false;
-        } else if (validateEmail[type] && validateEmail[type].regex.test(value)) {
+        } else if (validateEmail[type] && !validateEmail[type].regex.test(value)) {
             setError(validateEmail[type].message);
             return false;
         } else {
