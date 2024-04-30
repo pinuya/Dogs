@@ -6,18 +6,18 @@ const validateEmail = {
         regex: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
         message: 'Preencha com um e-mail válido!',
     },
-}; 
+};
 
-export default function useForm(type){
+export default function useForm(type) {
     const [value, setValue] = React.useState('');
     const [error, setError] = React.useState(null);
 
-    function validate(value){
-        if(type === false) return true;
-        if(value.length === 0){
+    function validate(value) {
+        if (type === false) return true;
+        if (value.length === 0) {
             setError('Preencha um valor.')
             return false;
-        } else if (validateEmail[type] && validateEmail[type].regex.test(value)){
+        } else if (validateEmail[type] && validateEmail[type].regex.test(value)) {
             setError(validateEmail[type].message);
             return false;
         } else {
@@ -26,14 +26,14 @@ export default function useForm(type){
         }
     }
 
-    function onChange({target}){
+    function onChange({ target }) {
         if (error) validate(target.value);
         setValue(target.value);
     }
 
-    return{
-        value, 
-        setValue, 
+    return {
+        value,
+        setValue,
         onChange,
         error,
         validate: () => validate(value),
