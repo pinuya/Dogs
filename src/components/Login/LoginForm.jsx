@@ -9,13 +9,14 @@ import { UserContext } from "../../UserContext";
 export default function LoginForm() {
     const username = useForm();
     const password = useForm();
-    const { userLogin } = React.UserContext(UserContext)
+
+    const { userLogin } = React.useContext(UserContext);
 
     async function handleSubmit(event) {
         event.preventDefault();
 
         if (username.validate() && password.validate()) {
-            userLogin(username.value, password.value)
+            userLogin(username.value, password.value);
         }
     }
 
@@ -25,11 +26,9 @@ export default function LoginForm() {
             <form action="" onSubmit={handleSubmit}>
                 <Input label="Usuário" type="text" name="username" {...username} />
                 <Input label="Senha" type="password" name="password" {...password} />
-
                 <Button>Entrar</Button>
             </form>
-
-            <Link to="/login/create">Cadastro</Link>
+            <Link to="/login/criar">Cadastro</Link>
         </section>
-    )
+    );
 }

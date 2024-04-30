@@ -1,7 +1,7 @@
 import React from "react";
 import { TOKEN_POST, USER_GET } from "./api";
 
-export const UserContext = React.createContext()
+export const UserContext = React.createContext();
 
 export default function UserStorage({ children }) {
     const [data, setData] = React.useState(null);
