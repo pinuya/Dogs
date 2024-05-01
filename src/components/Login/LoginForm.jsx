@@ -42,7 +42,7 @@ export default function LoginForm() {
             <div className={styles.cadastro}>
                 <h2 className={styles.subtitle}>Cadastre-se</h2>
                 <p>Ainda não possui conta? Cadastre-se no site.</p>
-                <Link className={stylesBtn.buttonCreate} to="/login/create">Cadastro</Link>
+                <Link className={stylesBtn.button} to="/login/create">Cadastro</Link>
             </div>
 
 
