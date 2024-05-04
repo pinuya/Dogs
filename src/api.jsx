@@ -26,7 +26,6 @@ export function TOKEN_VALIDATE_POST(token) {
 }
 
 export function USER_GET(token) {
-    console.log(token)
     return {
         url: API_URL + '/api/user',
         options: {

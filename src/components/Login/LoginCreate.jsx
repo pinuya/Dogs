@@ -22,9 +22,7 @@ export default function LoginCreate() {
             email: email.value,
             password: password.value
         });
-        console.log(url, 'url')
         const { response } = await request(url, options);
-        console.log(response)
         if (response.ok) userLogin(username.value, password.value)
 
     }
