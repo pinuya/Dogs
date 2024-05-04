@@ -2,8 +2,8 @@ import React from "react";
 
 export default function UserHeader() {
     return (
-        <div>
-            Header USER
-        </div>
+        <header>
+            <h1 className="title">Titulo</h1>
+        </header>
     )
 }

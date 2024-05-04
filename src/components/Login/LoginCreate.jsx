@@ -21,8 +21,10 @@ export default function LoginCreate() {
             username: username.value,
             email: email.value,
             password: password.value
-        })
-        const { response } = await fetch(url, options);
+        });
+        console.log(url, 'url')
+        const { response } = await request(url, options);
+        console.log(response)
         if (response.ok) userLogin(username.value, password.value)
 
     }
