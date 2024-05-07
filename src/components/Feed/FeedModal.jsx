@@ -1,12 +1,12 @@
 import React from "react";
-// import styles from './FeedModal.modules.css';
+import styles from './FeedModal.module.css';
 import useFetch from '../../Hooks/useFetch';
 import { PHOTO_GET } from '../../api';
 import Error from '../Helper/Error';
 import Loading from "../Helper/Loading";
 import PhotoContent from '../Photo/PhotoContent';
 
-export default function FeedModal({ photo }) {
+export default function FeedModal({ photo, setModalPhoto }) {
     const { data, error, loading, request } = useFetch();
 
     React.useEffect(() => {
@@ -14,8 +14,12 @@ export default function FeedModal({ photo }) {
         request(url, options)
     }, [photo, request])
 
+    function handleOutsideClick(event) {
+        if (event.target === event.currentTarget) setModalPhoto(null)
+    }
+
     return (
-        <div className={styles.modal}>
+        <div className={styles.modal} onClick={handleOutsideClick}>
             {error && <Error error={error} />}
             {loading && <Loading />}
             {data && <PhotoContent data={data} />}

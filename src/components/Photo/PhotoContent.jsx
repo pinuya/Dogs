@@ -1,16 +1,18 @@
 import React from "react";
-//import styles from './PhotoContent.modules.css';
+import styles from './PhotoContent.module.css';
 import { Link } from "react-router-dom";
 import PhotoComments from "./PhotoComments";
 
 export default function PhotoContent({ data }) {
-    const { photo, coments } = data;
+    const { photo, comments } = data;
 
     <div className={styles.photo}>
-        <div className={styles.img}><img src={photo.src} alt={photo.title} /></div>
+        <div className={styles.img}><
+            img src={photo.src} alt={photo.title} />
+        </div>
         <div className={styles.details}>
             <div>
-                <p>
+                <p className={styles.author}>
                     <Link to={`/profile/${photo.author}`}>@{photo.author}</Link>
                     <span className={styles.views}>{photo.acessos}</span>
                 </p>
