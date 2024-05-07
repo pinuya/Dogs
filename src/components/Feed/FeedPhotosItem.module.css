@@ -25,6 +25,7 @@
   background: rgba(0, 0, 0, 0.3);
   color: white;
   font-size: 1rem;
+  text-align: center;
   align-items: center;
   justify-content: center;
   grid-area: 1/1;

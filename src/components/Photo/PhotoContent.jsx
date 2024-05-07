@@ -7,8 +7,8 @@ export default function PhotoContent({ data }) {
     const { photo, comments } = data;
 
     <div className={styles.photo}>
-        <div className={styles.img}><
-            img src={photo.src} alt={photo.title} />
+        <div className={styles.img}>
+            <img src={photo.src} alt={photo.title} />
         </div>
         <div className={styles.details}>
             <div>

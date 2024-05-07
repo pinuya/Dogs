@@ -54,7 +54,7 @@
   text-decoration: underline;
 }
 
-.views {
+.views::before {
   content: "";
   display: inline-block;
   width: 16px;
