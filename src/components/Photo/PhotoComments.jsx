@@ -8,9 +8,9 @@ export default function PhotoComments(props) {
     const commentsSection = React.useRef(null);
     const { login } = React.useContext(UserContext);
 
-    React.useEffect(() => {
-        commentsSection.current.scrollTop = commentsSection.current.scrollHeight;
-    }, [comments]);
+    // React.useEffect(() => {
+    //     commentsSection.current.scrollTop = commentsSection.current.scrollHeight;
+    // }, [comments]);
 
     return (
         <>

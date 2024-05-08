@@ -41,15 +41,15 @@
   outline: none;
 }
 
-.button:focus img,
-.button:hover img {
+.button:focus svg path,
+.button:hover svg path {
   fill: #fea;
   stroke: #fb1;
 }
 
-.button:focus img,
-.button:hover img {
-  animation: latir 0.6 infinite;
+.button:focus svg g,
+.button:hover svg g {
+  animation: latir 0.6s infinite;
 }
 
 @keyframes latir {
