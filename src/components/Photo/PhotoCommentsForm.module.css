@@ -36,6 +36,11 @@
   overflow: hidden;
 }
 
+.button:focus,
+.button:hover {
+  outline: none;
+}
+
 .button:focus svg path,
 .button:hover svg path {
   fill: #fea;
