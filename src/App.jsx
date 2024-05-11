@@ -10,8 +10,6 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import UserStorage from './UserContext'
 import Photo from './components/Photo/Photo';
 
-
-
 export default function App() {
   return (
     <div>
@@ -29,7 +27,7 @@ export default function App() {
                 </ProtectedRouter>
               }
             />
-            <Route path="foto/:id" element={<Photo />} />
+            <Route path='photo/:id' element={<Photo />} />
           </Routes>
           <Footer />
         </UserStorage>
