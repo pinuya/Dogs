@@ -6,7 +6,7 @@
 ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/pinuya/Dogs?style=for-the-badge)
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/pinuya/Dogs?style=for-the-badge)
 
-<img src="/src/assets/dogs.png" alt="Login do Site"/>
+<img src="/src/Assets/dogs.png" alt="Login do Site"/>
 
 > Projeto Dogs foi feito no curso Origamid, e um projeto OpenSource, onde os alunos aprendem a desenvolver um projeto do 0, com consumo de API, validação de login, upload de fotos e uma serie de novas aprendizagens.
 
