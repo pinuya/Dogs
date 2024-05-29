@@ -1,4 +1,4 @@
-# DOGS
+<h2 align="center">DOGS</h2>
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/pinuya/Dogs?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/pinuya/Dogs?style=for-the-badge)
@@ -6,7 +6,7 @@
 ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/pinuya/Dogs?style=for-the-badge)
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/pinuya/Dogs?style=for-the-badge)
 
-<img align="center" src="https://media.discordapp.net/attachments/1226542179380494359/1238547803605696512/image.png?ex=663faf07&is=663e5d87&hm=e5fae3db2bf5f226c7d90bdc1197a9a46715f01b85d3e958dc9147f62c9a3bb3&=&format=webp&quality=lossless" alt="Imagem de um pug bem bacana.">
+<img src="/src/assets/dogs.png" alt="Login do Site"/>
 
 > Projeto Dogs foi feito no curso Origamid, e um projeto OpenSource, onde os alunos aprendem a desenvolver um projeto do 0, com consumo de API, validação de login, upload de fotos e uma serie de novas aprendizagens.
 
