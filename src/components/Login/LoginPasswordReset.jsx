@@ -6,7 +6,7 @@ import useFetch from "../../Hooks/useFetch"
 import { PASSWORD_RESET } from "../../api";
 import Error from '../Helper/Error'
 import { useNavigate } from "react-router-dom";
-import Head from './Helper/Head';
+import Head from '../Helper/Head';
 
 export default function LoginPasswordReset() {
   const [login, setLogin] = React.useState('');

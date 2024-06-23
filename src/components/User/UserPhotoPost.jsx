@@ -7,7 +7,7 @@ import Button from '../Forms/Button';
 import Error from '../Helper/Error';
 import { PHOTO_POST } from "../../api";
 import { useNavigate } from "react-router-dom";
-import Head from './Helper/Head';
+import Head from '../Helper/Head';
 
 export default function UserPhotoPost() {
     const nome = useForm();

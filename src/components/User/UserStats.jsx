@@ -1,5 +1,5 @@
 import React from "react";
-import Head from './Helper/Head';
+import Head from '../Helper/Head';
 
 export default function UserStats() {
     return (

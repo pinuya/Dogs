@@ -6,7 +6,7 @@ import useForm from "../../Hooks/useForm";
 import { USER_POST } from "../../api";
 import { UserContext } from "../../UserContext";
 import useFetch from '../../Hooks/useFetch';
-import Head from './Helper/Head';
+import Head from '../Helper/Head';
 
 export default function LoginCreate() {
     const username = useForm();

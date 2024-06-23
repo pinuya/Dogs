@@ -5,7 +5,7 @@ import useForm from "../../Hooks/useForm"
 import useFetch from "../../Hooks/useFetch"
 import { PASSWORD_LOST } from "../../api";
 import Error from '../Helper/Error'
-import Head from './Helper/Head';
+import Head from '../Helper/Head';
 
 export default function LoginPasswordLost() {
     const login = useForm();

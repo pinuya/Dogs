@@ -7,8 +7,7 @@ import { UserContext } from "../../UserContext";
 import Error from "../Helper/Error";
 import styles from './LoginForm.module.css';
 import stylesBtn from '../Forms/Button.module.css';
-import Head from './Helper/Head';
-
+import Head from '../Helper/Head';
 
 export default function LoginForm() {
     const username = useForm();

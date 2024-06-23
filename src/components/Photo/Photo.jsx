@@ -5,7 +5,7 @@ import Error from '../Helper/Error';
 import Loading from '../Helper/Loading';
 import PhotoContent from '../Photo/PhotoContent';
 import { PHOTO_GET } from "../../api";
-import Head from './Helper/Head';
+import Head from '../Helper/Head';
 
 export default function Photo() {
     const { id } = useParams();
