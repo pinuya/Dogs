@@ -3,6 +3,7 @@ import Head from '../Helper/Head';
 import useFetch from '../../Hooks/useFetch'
 import Loading from '../Helper/Loading'
 import Error from '../Helper/Error'
+import UserStatsGraphs from "./UserStatsGraphs";
 
 export default function UserStats() {
     const { data, error, loading, request } = useFetch();
@@ -22,7 +23,7 @@ export default function UserStats() {
         return (
             <div>
                 <Head title="Estatisticas" />
-                Estatisticas
+                <UserStatsGraphs data={data} />
             </div>
         );
     else return null;
